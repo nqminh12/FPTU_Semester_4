@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JSP Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="timeable.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="img/logo.jpg" alt="">
+    </div>
+    <div class="lecturer">
+        <h1>Lecturer name: Ngo tung Son</h1>
+    </div>
+
+    <form action="timetable" method="GET">
+        <input type="hidden" value="1" name="id" />
+        From: <input type="date" name="from" value="" /> -
+        <input type="date" name="to" value="" />
+        <button>View</button>
+    </form>
+    <br />
+
+    <div class="table">
+        <table border="1px">
+            <tr>
+                <td></td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+                <td>(SUN) 2024-02-27</td>
+            </tr>
+
+            <tr>
+                <td>Slot 1</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slot 2</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slot 3</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slot 4</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slot 5</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slot 6</td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</a></td>
+                <td></td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td>SE1815-PRJ301 <br /><a href="">Take</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <!-- mau bảng mới -->
+
+    <div class="select-month-option-find">
+        Select month: <input id="allevent_month" type="month" name="month" />
+        <button onclick="searchAllEventByMonth()"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="body-mine">
+        <div class="body-table">
+            <table>
+                <tr class="table-header">
+                    <th>
+                        Date
+                    </th>
+                    <th>Event's creator</th>
+                    <th>
+                        Title
+                    </th>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <div>
+                            <h4 class="no-padding-margin">25/03</h4>
+                            <p style="font-size: 15px">(02/31)</p>
+                        </div>
+                    </td>
+                    <td>Quang Minh</td>
+                    <td>
+                        <div style="cursor: pointer;" onclick="Openeventdetail(1)">
+                            <p><i class="fas fa-circle" style="color: green"></i> 11:30pm - 12.30pm</p>
+                            <p>helllo</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h4 class="no-padding-margin">25/03</h4>
+                            <p style="font-size: 15px">(02/31)</p>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <p><i class="fas fa-circle" style="color: red"></i> 11:30pm - 12.30pm</p>
+                            <p>helllo</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h4 class="no-padding-margin">25/03</h4>
+                            <p style="font-size: 15px">(02/31)</p>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <p><i class="fas fa-circle" style="color: blue"></i> 11:30pm - 12.30pm</p>
+                            <p>helllo0000000000000000</p>
+                        </div>
+                        <div>
+                            <p><i class="fas fa-circle" style="color: blue"></i> 11:30pm - 12.30pm</p>
+                            <p>helllo0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <h4 class="no-padding-margin">25/03</h4>
+                            <p style="font-size: 15px">(02/31)</p>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div>
+                            <p><i class="fas fa-circle" style="color: yellow"></i> 11:30pm - 12.30pm</p>
+                            <p>helllo</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

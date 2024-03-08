@@ -1,0 +1,17 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+
+.body-content{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+}

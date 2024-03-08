@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>JSP Page</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+
+<body>
+    <h1>Lecturer name: Ngo tung Son</h1>
+    <form action="timetable" method="GET">
+        <input type="hidden" value="1" name="id" />
+        From: <input type="date" name="from" value="${requestScope.from}" /> -
+        <input type="date" name="to" value="${requestScope.to}" />
+        <input type="submit" value="View" />
+    </form>
+    <table border="1px">
+        <tr>
+            <td></td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+            <td>(SUN) 2024-02-27</td>
+        </tr>
+
+        <tr>
+            <td>Slot 1</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slot 2</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slot 3</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slot 4</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slot 5</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Slot 6</td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</a></td>
+            <td></td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td>SE1815-PRJ301 <a href="">Take</td>
+            <td></td>
+            <td></td>
+        </tr>
+        </c:forEach>
+    </table>
+</body>
+
+</html>

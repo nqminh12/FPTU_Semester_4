@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+}
+
+.logo img{
+    width: 400px;
+}
+
+.lecturer{
+    padding-bottom: 20px;
+}
+
+form{
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.122);
+    padding: 15px 25px;
+    border-radius: 5px;
+
+}
+
+input{
+    padding: 5px 10px;
+}
+
+button{
+    padding: 5px 10px;
+    margin-left: 10px;
+    background-color: rgb(73, 73, 245);
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+
+
+table{
+    margin-top: 20px;
+}

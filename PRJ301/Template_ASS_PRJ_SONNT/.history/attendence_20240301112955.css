@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+    background-color: rgba(221, 131, 6, 0.381);
+    background-size: cover;
+    background-position: center;
+}
+
+.header img{
+    width: 150px;
+}

@@ -1,0 +1,73 @@
+body {
+    background: url('/images/Backgrounp.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.nopadding {
+    padding: 0px;
+}
+
+.bestseller img {
+    width: 400px;
+    height: auto;
+    float: left;
+}
+
+.bestseller {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid rgb(157, 153, 153);
+    border-radius: 5px;
+
+    height: auto;
+    width: 70%;
+    padding-right: 10px;
+    margin-left: 10%;
+    margin-top: 7%;
+    position: relative;
+    
+}
+
+
+
+.list-option {
+    /* position: fixed; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    
+}
+
+
+
+
+
+.home-button {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0px 0px 4px 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .home-button:hover {
+    background-color: #888;
+    color: #fff;
+    text-decoration: none;
+  }

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    width: 40vw;
+    height: 20vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.nav-logo{
+    background-color: rgba(0, 0, 0, 0.207);
+    text-align: center;
+    padding: 20px;
+}
+
+.nav-logo img{
+    width: 40%;
+}

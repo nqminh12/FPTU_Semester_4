@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <link rel="stylesheet" href="timetable.css">
+    </head>
+    <body>
+        <h1>Lecturer name: ${sessionScope.account.displayname}</h1>
+        <form action="timetable" method="GET">
+            <input type="hidden" value="1" name="id"/>
+            From: <input type="date" name="from" value="${requestScope.from}"/> -
+            <input type="date" name="to" value="${requestScope.to}"/>
+            <input type="submit" value="View"/>
+        </form>
+        <table border="1px">
+            <tr>
+                <td></td>
+                <!--hang dau tien in ra date sau khi lap qua array list dates-->
+                <c:forEach items="${requestScope.dates}" var="d">
+                    <td>
+                (<fmt:formatDate pattern="E" value="${d}" />)
+                        ${d}</td>
+                </c:forEach>
+            </tr>
+            <!--Lap qua mang arraylisst các slot-->
+            <c:forEach items="${requestScope.slots}" var="slot">
+                <tr>
+                    <td>${slot.name}</td>
+                    <c:forEach items="${requestScope.dates}" var="d">
+                        <td>
+                            <c:forEach items="${requestScope.lessions}" var="les">
+                                <c:if test="${les.date eq d and les.slot.id eq slot.id}">
+                                    ${les.group.name} - ${les.group.subject.name}
+                                    <a href="att?id=${les.id}">Take</a>
+                                </c:if>
+                            </c:forEach>
+                        </td>
+                    </c:forEach>
+                </tr>
+            </c:forEach>
+        </table>
+    </body>
+</html>

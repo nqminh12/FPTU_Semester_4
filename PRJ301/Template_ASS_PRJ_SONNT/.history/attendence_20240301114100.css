@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+    background-color: rgba(221, 131, 6, 0.381);
+    background-size: cover;
+    background-position: center;
+}
+
+.header img{
+    width: 250px;
+}
+
+.header{
+    text-align: left;
+}
+
+.information {
+    background-color: bisque;
+    display: inline-block;
+    padding: 10px;
+}
+
+.information table{
+    border: 1px solid black;
+}
+
+.information td{
+    border: 2px solid rgba(0, 0, 0, 0.299);
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif
+    font-weight: 600;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+    <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/x-icon" href="https://th.bing.com/th/id/R.e15d750fe41eb99350f0c56e6b66b653?rik=QJI66s2o67Q7jw&pid=ImgRaw&r=0">
+ 
+</head>
+
+<body>
+    <div class="body-content">
+        <h2 class="login-title">Welcomt to fap</h2>
+        <img src="img/logo.jpg" alt="error">
+        <form action="login" method="post">
+            <input type="text" name="gmail" placeholder="fptu mail" required><br/>
+            <input type="password" name="password" placeholder="password" required><span class="material-symbols-outlined icon1" onclick="togglePasswordVisibility()">
+                visibility_off
+            </span><br/>
+            <div>
+                <select name="campus">
+                    <option value="1">Ha Noi</option>
+                    <option value="2">Da Nang</option>
+                    <option value="3">HCM</option>
+                </select>
+                <a>Forgot password</a>
+            </div>
+            <button>Login</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("password");
+            var visibilitySpan = document.querySelector(".material-symbols-outlined.icon1");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                visibilitySpan.textContent = "visibility";
+            } else {
+                passwordInput.type = "password";
+                visibilitySpan.textContent = "visibility_off";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

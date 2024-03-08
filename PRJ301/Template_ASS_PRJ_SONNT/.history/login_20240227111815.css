@@ -1,0 +1,15 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: orange;
+}
+
+.body-content{
+    background-color: white;
+    width: 400px;
+    height: 700px;
+}

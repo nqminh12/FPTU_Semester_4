@@ -1,0 +1,48 @@
+table{
+    border: 1px solid black;    
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin: 20px auto;
+    background-color: rgb(240, 240, 240);
+}
+
+td{
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(210, 210, 210);
+}
+
+.aqua{
+    background-color: white;
+    box-shadow: 3px 5px 10px aqua;
+}
+
+.orange{
+    background-color: white;
+     box-shadow: 3px 5px 10px rgb(255, 165, 0);
+}
+
+#alert-tag{
+    text-align: center;
+}
+
+.win_x{
+    background-color: rgb(255, 165, 0);
+}
+
+.win_o{
+    background-color: aqua;
+}
+
+#resetbtn{
+    text-align: center;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+
+

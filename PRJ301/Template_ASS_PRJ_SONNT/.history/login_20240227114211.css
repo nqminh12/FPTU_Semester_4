@@ -1,0 +1,36 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-content{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-title{
+    color: white;
+    background-color: orange;
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+.body-content img{
+    width: 60%;
+    padding: 10px 0px;
+}
+

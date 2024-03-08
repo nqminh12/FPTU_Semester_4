@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 20px;
+    background-color: rgb(236, 139, 4);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img{
+    width: 400px;
+}
+
+.lecturer{
+    padding-bottom: 20px;
+}
+
+form{
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.122);
+    padding: 15px 25px;
+    border-radius: 5px;
+
+}
+
+input{
+    padding: 5px 10px;
+}
+
+button{
+    padding: 7px 15px;
+    margin-left: 10px;
+    background-color: rgb(73, 73, 245);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.table{
+    margin-top: 30px;
+}
+
+.table td{
+    width: 200px;
+    padding: 10px 15px;
+    background-color: white;
+}
+
+.table tr:first-child td{
+    background-color: #6b90da;
+}
+
+.table tr td:first-child{
+    text-align: center;
+    padding: 0;
+    width: 80px;
+}

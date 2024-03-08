@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Gundam</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Embed css here-->
+	<link rel="stylesheet" href="css/styleHomeAdmin.css">
+
+</head>
+
+<body>
+
+	<div class="container-fluid padding">
+
+		<div class="row">
+
+			<div class="col-lg-4 col-md-6 col-sm-12 nopadding banner">
+
+				<div class="list-option">
+					<div class="logo">
+						<img src="images/logo2.webp" alt="">
+					</div>
+
+					<div class="list-option-middle">
+						<div class="list-option-middle-left">
+							<img src="images/logo2.jpg" alt=""><br/>
+							<a href="/Login.html">Login</a>
+						</div>
+						<div>
+							<div class="list-option-element"><a href="/home.html">HOME</a> </div>
+							<div class="list-option-element"><a href="/about.html">ABOUT</a></div>
+							<div class="list-option-element"><a href="#footer">CONTACT</a></div>
+						</div>
+					</div>
+					
+
+
+					<div class="bestseller">
+						<img class="favorite-item-img nopadding " src="images/IMG_0882.JPG" alt="">
+						<div>
+							<p>BEST SELLER</p>
+							<p>MG Astray Red 6 arms</p>
+							<h3>100$</h3>
+							<form action="">
+								<input type="submit" value="Buy Now">
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="col-lg-8 col-md-6 col-sm-12 favorite">
+
+				<!-- Insert code favorite places here-->
+
+				<form class="nopadding" action="" method="">
+					
+
+					<ul id="list-option">
+						<li> <input type="button" value="All"></li>
+						<li> <input type="button" value="SD "></li>
+						<li> <input type="button" value="HG 1/144"></li>
+						<li> <input type="button" value="RG 1/144"></li>
+						<li> <input type="button" value="MG 1/100"></li>
+						<li> <input type="button" value="PG 1/60"></li>	
+					</ul>
+				</form>
+				<div class="col-lg-4 col-md-6 col-sm-12 favorite-item-father nopadding">
+					<div class="favorite-item">
+						<img class="favorite-item-img nopadding" src="images/barbatos_lupus_hg.jpg" alt="">
+						<p>SD Gundam Exia</p>
+						<h3>100$</h3>
+						<form action="">
+							<input type="submit" value="Edit">
+						</form>
+						
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 favorite-item-father nopadding">
+					<div class="favorite-item">
+						<img class="favorite-item-img nopadding" src="images/barbatos_lupus_hg.jpg" alt="">
+						<p>SD Gundam Exia</p>
+						<h3>100$</h3>
+						<form action="">
+							<input type="submit" value="Edit">
+						</form>
+						
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 col-sm-12 favorite-item-father nopadding">
+					<div class="favorite-item">
+						<form action="editproduct" method="post">
+							<input type="hidden" name="product" value="${prd.id}">
+							<input type="hidden" name="category" value="${prd.category_id}">
+							<input type="submit" value="Delete">
+						</form>
+						<img class="favorite-item-img nopadding" src="images/barbatos_lupus_hg.jpg" alt="">
+						<p>SD Gundam Exia</p>
+						<h3>100$</h3>
+						<form action="">
+							<input type="submit" value="Edit">
+						</form>
+						
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</div>
+	</div> <!--Kết thúc container-fluid-->
+
+
+
+	<div class="container-fluid" id="footer">
+		<a href="home.html" class="home-button-footer">HOME</a>
+		<div class="row">
+
+			<div class="footer">
+
+				<p>Email : minhnqhe176167@fpt.edu.vn</p>
+				<p>Address: FPTU, Thạch Hòa, Thạch Thất , Hà Nội</p>
+				<h5>&copy; Copyright 2021. VietTravel.VN</h5>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
